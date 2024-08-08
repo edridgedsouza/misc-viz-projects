@@ -14,7 +14,8 @@ let database = {};
 for (let i = 0; i < 1500; i++) {
     let dateOnly = 'NA';
 
-    let timeElement = document.querySelector('time._aaqe');
+    // This selector seems to change over time, but the Next Button appears more stable
+    let timeElement = document.querySelector('time._a9zf'); 
     if (timeElement) {
         let datetimeAttributeValue = timeElement.getAttribute('datetime');
         dateOnly = datetimeAttributeValue.split('T')[0];
